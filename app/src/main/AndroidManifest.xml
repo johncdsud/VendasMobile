@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="atmempresaconsultoria.cursoandroid.com.comercialetecnologiajm">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!--PERMISSOES QUE NOSSO APLICATIVO IRA REQUERIR DO USUÁRIO AO SER INSTALADO-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MenuPrincipalActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuJMActivity" />
+        <activity android:name=".cadastroUsuarioActivity" />
+        <activity android:name=".alterarUserActivity" />
+        <activity android:name=".alterarSenhaActivity" />
+        <activity android:name=".cadastroClientesActivity" />
+        <activity android:name=".cadastroActivity" />
+        <activity android:name=".cadastroClientePFActivity" />
+        <activity android:name=".cadastroClientePJActivity" />
+        <activity android:name=".cadastroClientePF2Activity" />
+        <activity android:name=".cadastroClientePJ2Activity" />
+        <activity android:name=".cadastroFornecedorActivity" />
+        <activity android:name=".cadastroFornecedor2Activity" />
+        <activity android:name=".cadastroProdutosActivity" />
+        <activity android:name=".cadastroProdutos2Activity" />
+        <activity android:name=".cadastroMarcasActivity" />
+        <activity android:name=".cadastroGradeActivity" />
+        <activity android:name=".dadosEmpresaActivity" />
+        <activity android:name=".movimentoEstoqueActivity" />
+        <activity android:name=".Pedidos1Activity" />
+        <activity android:name=".Pedidos2Activity" />
+        <activity android:name=".MenuPedidosActivity" />
+        <activity android:name=".Pedidos3Activity" />
+        <activity android:name=".Pedidos22Activity" />
+        <activity android:name=".RelatorioVendasActivity" />
+        <activity android:name=".loginActivity" />
+    </application>
+
+</manifest>

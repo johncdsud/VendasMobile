@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logintela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/usuarios"
+        android:layout_width="186dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuarios" />
+
+    <ImageView
+        android:id="@+id/usuario"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        app:srcCompat="@drawable/usuario"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <ImageView
+        android:id="@+id/senha"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/entrarlogin"
+        app:layout_constraintEnd_toEndOf="@+id/usuario"
+        app:layout_constraintStart_toStartOf="@+id/usuario"
+        app:layout_constraintTop_toBottomOf="@+id/usuario"
+        app:srcCompat="@drawable/senha" />
+
+    <ImageView
+        android:id="@+id/entrarlogin"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginStart="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/esqueceuusersenha"
+        app:layout_constraintEnd_toEndOf="@+id/esqueceuusersenha"
+        app:layout_constraintStart_toStartOf="@+id/usuarios"
+        app:srcCompat="@drawable/entrarlogin" />
+
+    <ImageView
+        android:id="@+id/sairlogin"
+        android:layout_width="55dp"
+        android:layout_height="41dp"
+        app:layout_constraintEnd_toEndOf="@+id/esqueceuusersenha"
+        app:layout_constraintStart_toEndOf="@+id/esqueceuusersenha"
+        app:layout_constraintTop_toTopOf="@+id/entrarlogin"
+        app:srcCompat="@drawable/sairlogin" />
+
+    <TextView
+        android:id="@+id/esqueceuusersenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Esqueceu seu usuário ou senha?"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cadastre"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cadastre"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="304dp"
+        android:text="Cadastre-se"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/esqueceuusersenha"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/sairlogin"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/usuario"
+        app:layout_constraintVertical_bias="0.138"
+        tools:text="Digite sua senha" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="167dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usuarios"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/usuariologin"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:baselineAligned="false"
+            android:hint="Digite seu usuário"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+</android.support.constraint.ConstraintLayout>
